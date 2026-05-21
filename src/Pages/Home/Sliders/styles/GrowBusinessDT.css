@@ -1,0 +1,27 @@
+
+.BusinessSwiperDT.swiper {
+    @apply w-full h-[360px] justify-start items-start inline-flex relative overflow-visible cursor-grab
+}
+
+.BusinessSwiperDT.swiper-slide {
+    @apply w-[268px] h-[361px] pl-4 flex-col justify-start items-start flex relative
+}
+
+.BusinessSwiperDT.swiper-slide-next {
+    @apply w-[268px] h-[361px] pl-4 flex-col justify-start items-start flex
+}
+
+.BusinessSwiperDT.swiper-slide-active {
+    @apply w-[268px] h-[361px] pl-4 flex-col justify-start items-start flex
+}
+
+.BusinessSwiperDT.swiper-button-prev {
+    @apply absolute top-0 left-10 h-2 w-2
+}
+
+.BusinessSwiperDT.swiper-wrapper {
+    @apply cursor-grab
+}
+
+
+

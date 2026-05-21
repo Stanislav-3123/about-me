@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.gradient {
+    background-image: linear-gradient(
+            to bottom,
+            hsla(182, 100%, 20%, 1),
+            hsla(182, 100%, 20%, 1)
+    );
+    z-index: 1;
+}
+
+.gradient::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    background-image: linear-gradient(
+            to bottom,
+            hsla(182, 100%, 20%, 1),
+            hsla(187, 71%, 59%, 1)
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.gradient:hover::before {
+    opacity: 1;
+}
+
+.btn_default {
+    /*background: linear-gradient(0deg, hsla(182, 100%, 20%, 1), hsla(182, 100%, 20%, 1));*/
+    background: hsla(182, 100%, 20%, 1);
+    transition: all .8s linear 0s;
+}
+
+.btn_default:hover {
+    /*background: linear-gradient(0deg, hsla(182, 100%, 20%, 1), hsla(187, 71%, 59%, 1));*/
+    background: hsla(187, 71%, 59%, 1);
+    transition: all .8s linear 0s;
+}
+
+.title_policies {
+    @apply text-[32px] text-green sm:text-5xl font-medium
+}
+
+.big_policies {
+    @apply text-sm text-policies sm:text-base sm:font-normal sm:font-['Arial'] sm:leading-snug
+}
+
+.small_policies {
+    @apply text-sm text-dark_blue sm:text-base sm:font-normal sm:font-['Arial'] sm:leading-snug
+}
+
+.police_button {
+    @apply text-sm h-auto font-medium p-[4.5px] cursor-pointer focus:border text-start focus:border-primary rounded-[30px] active:border active:border-primary border border-gray-200
+}
+.active_nav_police_button {
+    @apply text-sm h-auto font-medium p-[4.5px] cursor-pointer focus:border text-start focus:border-primary rounded-[30px] active:border active:border-primary border border-primary
+}
+.active-police-button {
+    @apply text-sm font-medium border border-primary rounded-[30px] p-[3.5px] px-4 cursor-pointer
+}
+
+.fr {
+    @apply flex flex-row
+}
+
+.fc {
+    @apply flex flex-col
+}
+
+.business-slide {
+    @apply fc border absolute border-primary bg-white w-[260px] duration-500 p-8 justify-between rounded-[30px] h-[360px]
+}
+
+.business-slide-bg {
+    @apply w-[260px] h-[360px] bg-cards-bg bg-cover duration-500 rounded-[30px]
+}
+
+.card-title {
+    @apply text-primary text-2xl font-semibold sm:font-[600] sm:text-[32px]
+}
+
+.swipe_card {
+    @apply absolute bg-grey w-[420px] h-[532px] p-4 rounded-[20px] fc gap-4
+}
+
+.cart-number {
+    @apply text-center text-primary text-sm font-medium w-20 h-[30px] px-8 py-1 rounded-[40px] border border-primary
+}
+
+.active {
+    @apply rounded-[30px]
+}
+
+.home-title-container {
+    @apply sm:px-8 px-4 flex-col justify-start items-start gap-8 inline-flex w-full
+}
+
+.header_dt {
+    @apply hidden fixed max-w-[1200px] z-40 top-0 h-[74px] px-8 rounded-[30px]  items-center justify-between sm:flex w-full
+}
+
+.logo-bg {
+    @apply bg-white h-full items-center flex rounded-b-[30px]
+}
+
+.button_dote {
+    @apply absolute w-[4px] h-[4px] left-[14px] animate-appear-dote
+}
+
+.header-link-dote {
+    @apply absolute w-[4px] h-[4px] left-[13px] animate-appear-dote
+}
+
+.footer-link-dote {
+    @apply w-[4px] h-[4px] left-[4px] top-[15px] animate-appear-dote absolute
+}
+
+.button_arrow_right {
+    @apply absolute right-[10px] rotate-180 animate-appear-dote
+}
+
+.contact_button {
+    @apply w-auto h-12 px-8 sm:py-4 py-8 bg-[#1E1E1E] rounded-[100px] font-medium sm:text-sm text-xs text-white uppercase text-center
+    inline-flex items-center cursor-pointer hover:pr-[40px] hover:pl-[24px] duration-500 relative
+}
+
+.logo_dt {
+    @apply sm:w-[127px] sm:h-[42px] sm:mx-8 w-[150px] h-[70px] py-4 sm:py-0 px-2 sm:px-0
+}
+
+.footer_link {
+    @apply py-2 basis-0 text-primary text-sm cursor-pointer hover:pl-4 duration-500 relative whitespace-normal
+}
+
+.nav_link {
+    @apply p-2 px-4 rounded-[30px] text-primary text-base font-medium flex flex-row items-center duration-500 relative hover:pl-[24px] hover:pr-[8px]
+}
+
+.active_nav_link {
+    @apply p-2 rounded-[30px] text-primary text-base font-medium flex flex-row items-center duration-500 relative pl-[24px] pr-[8px]
+}
+
+.header_nav {
+    @apply flex h-12 flex-row px-8 gap-4 items-center bg-white bg-opacity-50 rounded-[30px] backdrop-blur-[5px]
+}
+
+.green-button {
+    @apply sm:w-auto px-8 py-4 text-white uppercase text-xs font-medium rounded-[100px] duration-500
+
+}
+
+.home-page {
+    @apply overflow-y-hidden sm:overflow-y-visible w-full sm:pt-[160px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-16 bg-white
+}
+
+.policies-page {
+    @apply w-full sm:pt-[160px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-16 bg-white
+}
+
+.ticker {
+    @apply text-primary sm:text-5xl text-[32px] font-normal uppercase relative
+}
+
+.blue-ticker {
+    @apply text-accent sm:text-5xl text-[32px] font-normal uppercase relative
+}
+
+.small-grey {
+    @apply text-secondary text-sm sm:text-base font-normal font-['Arial'] leading-snug
+}
+
+.cart-button {
+    @apply w-fit h-[30px] py-[5px] px-8 text-primary text-center rounded-[40px] border border-primary text-sm font-medium
+}
+
+.light-button {
+    @apply px-8 py-2.5 h-[30px] rounded-[40px] border border-white justify-center items-center inline-flex text-white text-sm font-medium
+}
+
+.input {
+    @apply py-4 sm:py-8 px-8 bg-grey rounded-[30px] sm:rounded-[40px] border-none outline-none resize-none
+}
+
+.error_input {
+    @apply py-4 sm:py-8 px-8 bg-grey rounded-[30px] sm:rounded-[40px] border-none outline-none resize-none placeholder-rose-600
+}
+
+.contacts_page {
+    @apply fc w-full mt-[120px] sm:mt-[160px] gap-16 sm:gap-[160px]
+}
+
+.check_box {
+    @apply accent-grey self-start sm:self-center sm:mb-[25px] w-6 h-6
+}
+
+.check_box_text {
+    @apply text-primary font-normal sm:text-base font-['Arial'] leading-snug
+}
+
+.error_check_box {
+    @apply self-start sm:self-center sm:mb-[25px] w-6 h-6
+}
+
+.error_check_box_text {
+    @apply text-rose-600 font-normal sm:text-base font-['Arial'] leading-snug
+}
+
+
+.mobile_header {
+    @apply sm:hidden bg-blue-100 w-full fixed top-0 h-14 rounded-b-[20px]
+    shadow-lg justify-between items-center inline-flex z-40
+}
+
+.menu_link {
+    @apply h-12 p-4 bg-grey rounded-[30px] justify-center items-center text-sm font-medium text-primary text-center
+}
+
+.green_hover {
+    background: hsla(182, 100%, 20%, 1);
+    transition: all .5s linear 0s;
+
+    :hover {
+        background: linear-gradient(50deg, hsla(182, 100%, 20%, 1), hsla(187, 71%, 59%, 1));
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    @apply bg-white
+
+}
+
+code {
+    font-family: sourse-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+svg {
+    display: flex;
+    align-items: center;
+}
+
+h5 {
+    @apply text-primary sm:text-xl font-medium text-base
+}
+
+h1 {
+    @apply sm:text-primary sm:text-8xl font-medium text-black text-[64px]
+}
+
+h2 {
+    @apply text-primary text-5xl font-medium sm:text-[64px]
+}
+
+h3 {
+    @apply text-primary text-2xl font-medium
+}
+
+h4 {
+    @apply text-[32px] font-medium font-['Outfit'] text-primary
+}
+
+h6 {
+    @apply text-base font-medium text-primary sm:text-xl
+}
+
+span {
+    @apply text-accent
+}
+
+p {
+    @apply text-sm sm:text-base text-primary font-normal font-['Arial'] leading-snug
+}

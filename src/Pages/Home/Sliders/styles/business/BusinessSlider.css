@@ -1,0 +1,10 @@
+
+.BusinessSwiper.swiper {
+    @apply w-full h-[381px] justify-start items-start inline-flex relative overflow-visible
+
+}
+.BusinessSwiper.swiper-slide {
+    @apply w-[260px] h-[390px] flex-col justify-start items-start flex
+}
+
+

@@ -1,0 +1,22 @@
+
+.mySwiperMobile.swiper {
+    @apply w-full h-[70px] justify-start items-start inline-flex relative overflow-visible
+
+}
+
+
+
+.mySwiperMobile.hover-svg {
+    svg {
+        @apply fill-green bottom-[4px] left-[4px]
+    }
+}
+
+.mySwiperMobile.swiper-slide {
+    @apply w-[268px] h-[146px] pl-4 flex-col justify-start items-start flex
+}
+
+.mySwiperMobile.swiper-button-prev {
+    @apply absolute top-0 h-2 w-2
+}
+
