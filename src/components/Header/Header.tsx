@@ -49,7 +49,7 @@ const Header = () => {
     return (
         <div className="header_dt">
             <Link onClick={handleChangeActiveStatusAll}
-                to={'/'} className="logo-bg">
+                to={'/expectstar-limitada/'} className="logo-bg">
                 <svg className="logo_dt" xmlns="http://www.w3.org/2000/svg" width="140" height="46" fill="none"
                      viewBox="0 0 140 46">
                     <path fill="#006064" d="m0 22.86 13.972 20.12L28.55 22.86"/>
