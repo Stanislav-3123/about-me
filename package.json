@@ -2,7 +2,7 @@
   "name": "expectstar-limitada",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://stanislav-3123.github.io/expectstar-limitada/",
+  "homepage": "https://stanislav-3123.github.io/expectstar-limitada",
   "type": "module",
   "scripts": {
     "dev": "vite",
