@@ -16,7 +16,7 @@ function App() {
             <Header/>
             <MobileHeader/>
             <Routes>
-                <Route path='/expectstar-limitada' element={<Home/>}/>
+                <Route path='/' element={<Home/>}/>
                 <Route path='/contacts' element={<Contacts/>}/>
                 <Route path='/policies' element={<Policies/>}/>
                 <Route path='/terms' element={<Terms/>}/>
